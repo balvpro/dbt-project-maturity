@@ -1,1 +1,52 @@
+# ----------------------
+# Global ignores
+# ----------------------
+
+# OS / system files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments (project-specific or root-level)
 .venv/
+venv/
+env/
+ENV/
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.swp
+
+# ----------------------
+# dbt-specific ignores
+# ----------------------
+
+# Compiled SQL and run artifacts (per project)
+target/
+dbt_packages/
+logs/
+
+# If you use dbt docs locally
+manifest.json
+run_results.json
+catalog.json
+sources.json
+
+# ----------------------
+# Optional: for multiple dbt projects
+# ----------------------
+# This pattern ensures it works for *any* dbt project subfolder
+*/target/
+*/dbt_packages/
+*/logs/
+*/manifest.json
+*/run_results.json
+*/catalog.json
+*/sources.json
