@@ -2,6 +2,7 @@
   config(
     materialized = 'incremental',
     unique_key = 'claim_id',
+    incremental_strategy = 'merge'
     )
 }}
 
